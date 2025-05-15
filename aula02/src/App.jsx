@@ -2,6 +2,7 @@ import './App.css'
 import Escopo from './components/Escopo'
 import EscopoReduz from './components/EscopoReduz'
 import EscopoAtividade from './components/EscopoAtividade'
+import Info1v from './components/Info1V'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <Escopo/>
       <EscopoReduz />
       <EscopoAtividade/>
+      <Info1v/>
     </>
   )
 }
