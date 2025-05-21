@@ -1,11 +1,11 @@
-export default function Props ({nome, newname, atributo}){
+export default function Props (props){
     return(
         <>
             <div>
                 <h2>Teste props</h2>
-                <p>o nome {nome} foi enviado via props</p>
-                <p>{newname}</p>
-                <p>{atributo}</p>
+                <p>o nome {props.nome} foi enviado via props</p>
+                <p>{props.newname}</p>
+                <p>{props.atributo}</p>
             </div>
         </>
     )
