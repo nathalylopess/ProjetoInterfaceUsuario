@@ -1,0 +1,7 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 1000px;
+    
+}
