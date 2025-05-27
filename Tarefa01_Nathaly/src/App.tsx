@@ -1,13 +1,12 @@
 import './App.css'
-import Card from "./components/Card"
-import Props from "./components/Props"
+import Galeria from "./components/Galeria"
+
 
 function App() {
 
   return (
     <>
-      
-      <Props/>
+      <Galeria/>
     </>
   )
 }
