@@ -4,7 +4,7 @@ import Galeria from "./components/Galeria"
 
 function App() {
 
-  return (
+  return (  
     <>
       <Galeria/>
     </>
