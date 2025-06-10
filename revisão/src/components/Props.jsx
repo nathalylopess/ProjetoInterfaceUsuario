@@ -11,7 +11,8 @@ export default function Props(props) {
                 {props.nome_botao}
             </button>
             {/* tenho que passar o que vai ser o título lá no App.jsx */}
-            {/* Além disso, eu posso passar vários props, mas não preciso usá-los obrigatóriamente, só que ele aparecerá na tela, mas como vazio */}
+            {/* Além disso, eu posso passar vários props, mas não preciso usá-los obrigatóriamente, 
+            só que ele aparecerá na tela, mas como vazio */}
         </div>
     )
 }

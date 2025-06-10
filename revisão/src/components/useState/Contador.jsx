@@ -2,7 +2,7 @@
 // Guarda informações dinâmicas
 // Diferente do props que usa coisas de fora o state é interno ao componente e pode ser atualizado (mudado dinâmicamente)
 
-import { use, useState } from "react"; // useState é um hook do React, usado para criar um “state” (estado).
+import { useState } from "react"; // useState é um hook do React, usado para criar um “state” (estado).
 
 export default function Contador() {
     const [contador, setContador] = useState(0)
@@ -15,7 +15,9 @@ export default function Contador() {
     return (
         <div>
             <h3>Contador: {contador}</h3>
-            {setContador+1 }
+            <button onClick={() => setContador(contador +1) } > adicionar  </button>
+            {contador > 5 && <p>Você clicou bastante!</p>}
+
         </div>
     )
 }
