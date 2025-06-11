@@ -6,7 +6,7 @@ export default function ListaTarefas() {
 
     function addTarefa() {
         setLista([...lista, tarefa])
-        // setTarefa("")
+        setTarefa("")
     }
 
     function removeTarefa(id) {
@@ -16,16 +16,24 @@ export default function ListaTarefas() {
 
     return (
         <div>
-            <input type="text" onChange={(evento) => setTarefa(evento.target.value)} />
             <br />
+            <h2>Listando Tarefas</h2>
+            <input type="text" onChange={(evento) => setTarefa(evento.target.value)} />
+            <br /><br />
             <button onClick={addTarefa}>Enviar</button>
 
-            <p>Sua lista: {lista.join(", ")}</p>
+            {/* <p>Sua lista: {lista}</p> */}
             <ul>
                 {lista.map((item, index) => (
 
-                    <li key={index}>
-                        {item}
+                    <li style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        padding: "8px 12px",
+                        borderBottom: "1px solid #ccc",
+                    }} key={index}>
+                        <span  style={{ fontWeight: "bold"}} >{item}</span>
                         <button onClick={() => removeTarefa(index)}>Apagar</button>
                     </li>
                 ))}

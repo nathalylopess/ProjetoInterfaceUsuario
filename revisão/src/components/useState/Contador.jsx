@@ -16,6 +16,8 @@ export default function Contador() {
         <div>
             <h3>Contador: {contador}</h3>
             <button onClick={() => setContador(contador +1) } > adicionar  </button>
+            <button onClick={() => setContador(contador -1) }>diminuir</button>
+            <button onClick={() => setContador(0)} >zerar</button>
             {contador > 5 && <p>Você clicou bastante!</p>}
 
         </div>

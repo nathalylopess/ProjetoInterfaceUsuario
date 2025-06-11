@@ -8,6 +8,9 @@ import EspelhoDeTexto from './components/useState/EspelhoDeTexto'
 import ColorChanger from './components/useState/ColorChanger'
 import Semaforo from './components/useState/Semaforo'
 import ListaTarefas from './components/useState/ListaTarefas'
+import Cliques from './components/useState/Cliques'
+import CampoNome from './components/useState/CampoNome'
+import ListaFilmes from './components/useState/ListaFilmes'
 
 function App() {
 
@@ -26,6 +29,9 @@ function App() {
       <ColorChanger/>
       <Semaforo/>
       <ListaTarefas/>
+      <Cliques/>
+      <CampoNome/>
+      <ListaFilmes/>
 
     </>
   )
