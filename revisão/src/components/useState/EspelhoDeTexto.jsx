@@ -8,11 +8,7 @@ export default function EspelhoDeTexto() {
             <br />
             <h2>Texto em tempo real</h2>
             <input onChange={(evento) => setTexto(evento.target.value)} />
-            <p>Você digitou:{texto}</p>
+            <p>Você digitou: {texto}</p>
         </div>
-        
-
     )
-
-
 }

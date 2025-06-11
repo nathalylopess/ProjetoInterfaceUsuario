@@ -7,6 +7,7 @@ import Zerar from './components/useState/Zerar'
 import EspelhoDeTexto from './components/useState/EspelhoDeTexto'
 import ColorChanger from './components/useState/ColorChanger'
 import Semaforo from './components/useState/Semaforo'
+import ListaTarefas from './components/useState/ListaTarefas'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       <EspelhoDeTexto/>
       <ColorChanger/>
       <Semaforo/>
+      <ListaTarefas/>
 
     </>
   )
