@@ -21,7 +21,9 @@ Este diretório está sendo utilizado como espaço de estudo para aprofundamento
 
 ---
 
-### ✅ Como rodar o projeto
+### Como rodar o projeto
+
+Para executar qualquer uma das versões, é necessário ter o Node.js e o npm instalados em sua máquina.
 
 1. Acesse uma das pastas (`Tarefa01_Nathaly` ou `revisão`).
 2. Instale as dependências:
