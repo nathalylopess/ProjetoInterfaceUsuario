@@ -14,6 +14,13 @@ import ListaFilmes from './components/useState/ListaFilmes'
 import DobrarNumeros from './components/map_filter/DobrarNumeros'
 import FiltrarNomes from './components/map_filter/FiltrarNomes'
 import AlterarElementos from './components/map_filter/AlterarElementos'
+import ContadorSimples from './components/revisando_revisao/ContadorSimples'
+import BotaoAlerta from './components/revisando_revisao/BotaoAlerta'
+import CampoTexto from './components/revisando_revisao/CampoTexto'
+import ListaNomes from './components/revisando_revisao/ListaNomes'
+import MensagemProps from './components/revisando_revisao/MensagemProps'
+import Caixa from './components/revisando_revisao/Caixa'
+import Tarefa from './components/revisando_revisao/Tarefa'
 
 function App() {
 
@@ -34,11 +41,20 @@ function App() {
       <Cliques/>
       <CampoNome/>
       <ListaFilmes/> */}
-      <h1>Aprendendo .map() e .filter() </h1>
+      {/* <h1>Aprendendo .map() e .filter() </h1>
       <DobrarNumeros/>
       <FiltrarNomes/>
-      <AlterarElementos/>
-
+      <AlterarElementos/> */}
+      <h1>Revisando a revisão</h1>
+      <ContadorSimples/>
+      <BotaoAlerta/>
+      <CampoTexto/>
+      <ListaNomes/>
+      <MensagemProps mensagem="Olá, mundo!"/>
+      <Caixa>
+        <p>Esse é um componente Children. Na tela não dá para notar a diferença, mas dê uma olhadinha no código e verá ;)</p>
+      </Caixa>
+      <Tarefa/>
     </>
   )
 }
