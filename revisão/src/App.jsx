@@ -22,6 +22,12 @@ import MensagemProps from './components/revisando_revisao/MensagemProps'
 import Caixa from './components/revisando_revisao/Caixa'
 import Tarefa from './components/revisando_revisao/Tarefa'
 
+// 2° Bimestre
+import MeuFormulario from './components/2-bismestre/preventDefault/MeuFormulario' 
+import CapturandoNome from './components/2-bismestre/preventDefault/CapturandoNome'
+import NomeSobrenome from './components/2-bismestre/preventDefault/NomeSobrenome'
+
+
 function App() {
 
   return (
@@ -45,7 +51,7 @@ function App() {
       <DobrarNumeros/>
       <FiltrarNomes/>
       <AlterarElementos/> */}
-      <h1>Revisando a revisão</h1>
+      {/* <h1>Revisando a revisão</h1>
       <ContadorSimples/>
       <BotaoAlerta/>
       <CampoTexto/>
@@ -54,7 +60,12 @@ function App() {
       <Caixa>
         <p>Esse é um componente Children. Na tela não dá para notar a diferença, mas dê uma olhadinha no código e verá ;)</p>
       </Caixa>
-      <Tarefa/>
+      <Tarefa/> */}
+
+      <h1>2° Bimestre</h1>
+      {/* <MeuFormulario/>
+      <CapturandoNome/> */}
+      <NomeSobrenome/>
     </>
   )
 }
