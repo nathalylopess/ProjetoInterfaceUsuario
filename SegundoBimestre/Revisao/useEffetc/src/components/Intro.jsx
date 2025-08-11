@@ -10,7 +10,9 @@ export default function Intro(){
 
     return(
         <div>
-                <h2>Contador: {contador}</h2>
+                <h2>Exercício 2 — Atualizar título da aba com base no estado</h2>
+                <b>Contador: {contador}</b>
+                <br />
                 <button onClick={() => setContador(contador + 1)}>clique aqui</button>
         </div>
     )

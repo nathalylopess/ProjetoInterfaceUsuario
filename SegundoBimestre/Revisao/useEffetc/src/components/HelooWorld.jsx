@@ -5,5 +5,10 @@ export default function App(){
         console.log("O componente foi montado")
     },[]) //array vazio -> executa só uma vez
 
-    return <h2>Helo World</h2>
+    return (
+    <div>
+        <h2>Exercício 1 — Executar uma vez ao carregar o componente</h2>
+        <h3>Helo World</h3>
+    </div>
+    )
 }
