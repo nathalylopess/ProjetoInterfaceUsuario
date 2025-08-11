@@ -8,6 +8,8 @@ import { useState } from "react"
 import "./style.css"
 
 export default function Login() {
+    const [login,setLogin]=useState("")
+    const [id,setId]=useState("") // Para que mude na tela apenas quando apertar o botão
     const [word, setWord] = useState("")
     const [color, setColor] = useState("white")
 
@@ -15,10 +17,13 @@ export default function Login() {
         event.preventDefault() // Se quiser que mude e fique 
         if (word === "AlunoPIU") {
             setColor("green")
+            setId(login)
         } else {
             setColor("white")
+            setId("")
         }
     }
+
 
     return (
         <div className="container">
@@ -27,7 +32,7 @@ export default function Login() {
                 <div style={{backgroundColor: color}}className="caixa">
                     <div className="caixa-intra">
                         <label htmlFor="">Login:</label>
-                        <input type="text" />
+                        <input type="text" value={login} onChange={(e)=> setLogin(e.target.value)}  />
                     </div>
                     <div className="caixa-intra">
                         <label htmlFor="">Palavra-passe:</label>
@@ -36,7 +41,7 @@ export default function Login() {
                     <button type="submit">Enviar</button>
                 </div>
             </form>
-
+            <p>Seu login: {id}</p>
         </div>
     )
 }
