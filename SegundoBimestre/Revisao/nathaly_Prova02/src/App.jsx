@@ -1,11 +1,12 @@
- 
+import Login from "./components/Login"
+import "./App.css" //nunca apagar isso
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-
+      <h1>Prova 02 - Nathaly Lopes</h1>
+      <Login/>
     </>
   )
 }
